@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+    <title>Backbonejs</title>
+    <link rel="stylesheet" href="assets/base.css">
+</head>
+<body>
+<section id="todoapp">
+    <header id="header">
+        <h1>todos</h1>
+        <input type="text" id="new-todo" placeholder="what needs to be done?" autofocus>
+    </header>
+    <section id="main">
+        <input type="checkbox" id="toggle-all">
+        <label for="toggle-all">Mark all as complete</label>
+        <ul id="todo-list"></ul>
+    </section>
+    <footer id="footer"></footer>
+</section>
+<div id="info">
+    <p>Double-click to edit a todo</p>
+</div>
+<script type="text/x-handlebars-template" id="item-template">
+    <div class="view">
+        <input type="checkbox" class="toggle" {{#if completed }}checked="checked"{{/if}}>
+        <label>{{{title}}}</label>
+        <button class="destroy"></button>
+    </div>
+    <input type="text" class="edit" value="{{{title}}}">
+</script>
+<script type="text/x-handlebars-template" id="stats-template">
+        <span id="todo-count">
+            <strong>{{ remaining }}</strong>
+            {{#xif "this.remaining===1" }}
+                {{item}}
+            {{else}}
+                {{items}}
+            {{/xif}}
+        </span>
+    <ul id="filters">
+        <li>
+            <a href="#/" class="selected">All</a>
+        </li>
+        <li>
+            <a href="#/active">Active</a>
+        </li>
+        <li>
+            <a href="#/completed">Completed</a>
+        </li>
+    </ul>
+    {{#if completed}}
+    <button id="clear-completed">
+        Clear completed ({{completed}})
+    </button>
+    {{/if}}
+</script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/handlebars/handlebars.js"></script>
+<script src="js/handlebars_plugins/x.js"></script>
+<script src="js/handlebars_plugins/xif.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="bower_components/backbone/backbone.js"></script>
+<script src="bower_components/backbone.localStorage/backbone.localStorage.js"></script>
+
+</body>
+</html>

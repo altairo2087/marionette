@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "xif.js",
+  "sourceRoot": "",
+  "sources": [
+    "xif.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;EAAA,UAAU,CAAC,cAAX,CAA0B,KAA1B,EAAiC,SAAC,UAAD,EAAa,OAAb;IAC/B,IAAG,UAAU,CAAC,OAAQ,CAAA,GAAA,CAAI,CAAC,KAAxB,CAA8B,IAA9B,EAAiC,CAAC,UAAD,EAAa,OAAb,CAAjC,CAAH;aAA+D,OAAO,CAAC,EAAR,CAAW,IAAX,EAA/D;KAAA,MAAA;aAAiF,OAAO,CAAC,OAAR,CAAgB,IAAhB,EAAjF;;EAD+B,CAAjC;AAAA"
+}

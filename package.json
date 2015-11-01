@@ -2,10 +2,21 @@
   "name": "marionette",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/altairo2087/marionette.git"
   },
   "author": "",
-  "license": "BSD-2-Clause"
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/altairo2087/marionette/issues"
+  },
+  "dependencies": {
+    "express": "~4.13.3"
+  }
 }
